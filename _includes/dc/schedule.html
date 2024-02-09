@@ -62,52 +62,58 @@ The schedule for the different curricula are listed here:
 </div>
 
 {% elsif site.curriculum == "dc-ecology" %}
-<div class="row">
-  <div class="col-md-6">
-    <h3>Day 1</h3>
+<div class="row">        <!-- first two days -->
+  <div class="col-md-6"> <!-- left column -->
+    <h3>Day 1 (20 Feb)</h3>
     <table class="table table-striped">
-      <tr>
-	<td>Before starting</td>
-	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
+      <tr>               <!-- row 1   -->
+        <td>Before starting</td>
+        <td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
       </tr>
-      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/OpenRefine-ecology-lesson/">OpenRefine for Data Cleaning</a></td></tr>
-      <tr>
-        <td>Afternoon</td>
-        <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Introduction to R</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
-      </td></tr>
-      <tr> <td>Evening</td> <td>END</td> </tr>
+      <tr>               <!-- row 2   -->
+        <td>13:00 - 15:00</td>        <!-- time    -->
+        <td> <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td>        <!-- content -->
+      </tr>
+      <tr>               <!-- row 3   -->
+        <td>15:00 - 17:00</td>        <!-- time    -->
+        <td><a href="https://datacarpentry.org/OpenRefine-ecology-lesson/">OpenRefine for Data Cleaning</a></td>        <!-- content -->
+      </tr>
     </table>
   </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
+  <div class="col-md-6"> <!-- right column -->
+    <h3>Day 2 (22 Feb)</h3>
     <table class="table table-striped">
-      <tr> <td>Morning</td>
-        <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis and Visualization</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Continuation of Python: Data analysis and Visualization</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
-        </td>
+      <tr>               <!-- row 1   -->
+        <td>13:00 - 17:00</td>        <!-- time    -->
+        <td><a href="https://datacarpentry.org/python-ecology-lesson/">Data Analysis and Visualization in Python</a></td>        <!-- content -->
       </tr>
-      <tr> <td>Afternoon</td><td><a href="https://datacarpentry.org/sql-ecology-lesson/">Data Management with SQL</a></td></tr>
-      <tr>
-	<td>Evening</td>
-	<td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
+    </table>
+  </div>
+</div>
+<div class="row">        <!-- days 3 and 4 -->
+  <div class="col-md-6"> <!-- left column -->
+    <h3>Day 3 (27 Feb)</h3>
+    <table class="table table-striped">
+      <tr>               <!-- row 1   -->
+        <td>13:00 - 17:00</td>        <!-- time    -->
+        <td><a href="https://datacarpentry.org/python-ecology-lesson/">Data Analysis and Visualization in Python</a></td>        <!-- content -->
       </tr>
-      <tr>
-	<td> </td>
-	<td> END </td>
+    </table>
+  </div>
+  <div class="col-md-6"> <!-- right column -->
+    <h3>Day 4 (29 Feb)</h3>
+    <table class="table table-striped">
+      <tr>               <!-- row 1   -->
+        <td>13:00 - 16:30</td>        <!-- time    -->
+        <td><td><a href="https://datacarpentry.org/sql-ecology-lesson/">Data Management with SQL</a></td></td>        <!-- content -->
+      </tr>
+      <tr>               <!-- row 2   -->
+        <td>16:30 - 17:00</td>        <!-- time    -->
+        <td>Wrap-up</td>        <!-- content -->
+      </tr>
+      <tr>               <!-- row 3   -->
+        <td>End</td>
+        <td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
       </tr>
     </table>
   </div>
